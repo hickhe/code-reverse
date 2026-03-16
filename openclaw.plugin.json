@@ -1,0 +1,19 @@
+{
+  "name": "repo-reverse",
+  "version": "0.2.0",
+  "runtime": "src/index.ts",
+  "skills": ["skills"],
+  "commands": ["req_scan"],
+  "backgroundServices": ["incremental_index_refresh"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "workspaceRoots": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "defaultLanguage": { "type": "string" },
+      "enableBackgroundIndex": { "type": "boolean" }
+    }
+  }
+}
